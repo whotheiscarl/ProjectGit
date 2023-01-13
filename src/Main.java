@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.*;
 import static java.lang.System.out;
 
@@ -7,33 +6,31 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        double balance; //bitte mit dieser variable arbeiten
+        double balance = 1876.05; //bitte mit dieser variable arbeiten
 
         out.println("Welcome to your local Bankomat.");
-        out.println("Please select an option: " + "available:" + "\n" + "1 - Login" + "\n" +
-                "2 - Balance" + "\n" + "3 - Withdraw money" + "\n" + "4 - Deposit money" + "\n" +
-                "5 - Get Balance in other currency " + "\n" +  "6 - Get new card" + "\n" + "7 - Block card");
+        out.println("Please select an option: " + "available:" + "\n" + "1 - Balance" + "\n" +
+                "2 - Withdraw money" + "\n" + "3 - Deposit money" + "\n" + "4 - Get Balance in other currency" + "\n" +
+                "5 - Get new card" + "\n" +  "6 - Block card");
 
         int auswahl = scanner.nextInt();
 
         switch(auswahl){
             case 1:
-                // login / personal data
+                // get balance
                 break;
             case 2:
-                // get Balance
-                break;
-            case 3:
                 // withdraw money
                 break;
-            case 4:
+            case 3:
                 // deposit money
                 break;
-            case 5: // get balance in other curency
+            case 4:
+                // get Balance on other Currency
                 break;
-            case 6: // get new card
+            case 5: // get new Card
                 break;
-            case 7: //block card
+            case 6: // Block card
                 break;
             default: {
                 System.out.println("Wrong data was entered");

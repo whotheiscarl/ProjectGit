@@ -7,7 +7,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        double balance; //bitte mit dieser variable arbeiten
+        double balance = 1876.05; //bitte mit dieser variable arbeiten
 
         out.println("Welcome to your local Bankomat.");
         out.println("Please select an option: " + "available:" + "\n" + "1 - Login" + "\n" +
@@ -23,9 +23,15 @@ public class Main {
             case 2:
                 // get Balance
                 break;
-            case 3:
-                // withdraw money
-                break;
+            case 3: // withdrway money
+
+                }
+
+
+
+                {
+                    break;
+                }
             case 4:
                 // deposit money
                 break;

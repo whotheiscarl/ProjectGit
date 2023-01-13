@@ -13,9 +13,9 @@ public class Main {
                 "2 - Withdraw money" + "\n" + "3 - Deposit money" + "\n" + "4 - Get Balance in other currency" + "\n" +
                 "5 - Get new card" + "\n" +  "6 - Block card");
 
-        int auswahl = scanner.nextInt();
+        int selection = scanner.nextInt();
 
-        switch(auswahl){
+        switch(selection){
             case 1:
                 // get balance
                 break;

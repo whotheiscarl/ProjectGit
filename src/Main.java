@@ -56,6 +56,7 @@ public class Main {
             switch (selection) {
                 case 1:
                     // get balance
+                    out.println("Your balance is: " + balance);
                     break;
                 case 2:
                     double result;
@@ -72,6 +73,30 @@ public class Main {
                     break;
                 case 3:
                     // deposit money
+
+                    Scanner Input = new Scanner((System.in));
+
+                    out.println("Möchten Sie eine Überweisung durchführen? (y/n)");
+
+                    char Answer = Input.next().charAt(0);
+                    if (Answer == ('y') ) {
+                        out.println("In Bearbeitung!!!");
+                        out.println("Geben Sie den gewünschte Betrag:");
+                        int Ueberweisung = Input.nextInt();
+                        out.println("");
+                        if (Ueberweisung < balance) {
+                            out.println("Überweisung durchgeführt");
+                            out.println("");
+                        } else if (Ueberweisung > balance) {
+                            out.println("Das von Ihnen gespeicherte Girokonto ist nicht ausreichend" +
+                                    "gedeckt um ie Lastschrift auszuführen.");
+                        } else if (Ueberweisung == balance) {
+                            out.println("Achtung! Ihr Kontostand wird nach diesem Vorgang 0 € sein");
+
+                        } else {
+                            out.println("Bitte geben Sie den gewünschten Betrag in Ziffern an.");
+                        }
+                    }
                     break;
                 case 4:
                     // get Balance on other Currency
@@ -143,19 +168,16 @@ public class Main {
                         throw new RuntimeException("Wrong data was entered. Please get another try. Thank you!");
 
                     }
-
-
                 case 6: // Block card
+                    out.println("Your card has been succesfully blocked.");
                     break;
                 default: {
                     out.println("Wrong data was entered. Please try another time.");
                 }
-
-
             }
         }
         else {
-                System.out.println("Das war leider nicht der richtige Pin"); }
+                out.println("Das war leider nicht der richtige Pin"); }
 
         out.println("");
         out.println("Thank you for your visit.");

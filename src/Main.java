@@ -6,7 +6,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        double balance = 1876.05; //bitte mit dieser variable arbeiten
+        double balance = 1876.05; //bitte mit dieser Variable arbeiten
 
         out.println("Welcome to your local ATM.");
         out.println("Please select an option: " + "available:" + "\n" + "1 - Balance" + "\n" +

@@ -1,4 +1,5 @@
 import java.util.*;
+
 import static java.lang.System.out;
 
 public class Main {
@@ -37,11 +38,16 @@ public class Main {
                 break;
             case 4:
                 // get Balance on other Currency
-                double exchangeJPY = 139.15; String JPY = "JPY";
-                double exchangeUSD = 1.08; String USD = "USD";
-                double exchangeGBP = 0.89; String GBP = "GBP";
-                double exchangeAUD = 1.55; String AUD = "AUD";
-                double exchangeCAD = 1.45; String CAD = "CAD";
+                double exchangeJPY = 139.15;
+                String JPY = "JPY";
+                double exchangeUSD = 1.08;
+                String USD = "USD";
+                double exchangeGBP = 0.89;
+                String GBP = "GBP";
+                double exchangeAUD = 1.55;
+                String AUD = "AUD";
+                double exchangeCAD = 1.45;
+                String CAD = "CAD";
                 int currrencySelection;
                 double newBalance = 0;
 
@@ -107,7 +113,6 @@ public class Main {
             default: {
                 System.out.println("Wrong data was entered. Please try another time.");
             }
-
 
 
         }

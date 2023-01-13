@@ -8,7 +8,7 @@ public class Main {
 
         double balance = 1876.05; //bitte mit dieser variable arbeiten
 
-        out.println("Welcome to your local Bankomat.");
+        out.println("Welcome to your local ATM.");
         out.println("Please select an option: " + "available:" + "\n" + "1 - Balance" + "\n" +
                 "2 - Withdraw money" + "\n" + "3 - Deposit money" + "\n" + "4 - Get Balance in other currency" + "\n" +
                 "5 - Get new card" + "\n" +  "6 - Block card");

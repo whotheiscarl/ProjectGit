@@ -74,12 +74,14 @@ public class Main {
                 out.println("Wrong data was entered");
             }
 
-            out.println("");
-            out.println("Thank you for your visit.");
 
-            scanner.close();
 
         }
+
+        out.println("");
+        out.println("Thank you for your visit.");
+
+        scanner.close();
 
     }
 
